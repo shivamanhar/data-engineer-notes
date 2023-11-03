@@ -1,0 +1,44 @@
+Common table
+------------------
+1) ins_bms_b_branches,  ins_bms_b_clusters
+2) ins_bms_cron_jobs, ins_bms_cron_jobs_6
+4vb,ins_bms_cron_jobs_dsr,ins_bms_cron_jobs_pms,ins_bms_cron_jobs_projection
+3) ins_bms_dsr_cron_limits, ins_bms_dsr_cron_limits_monthly
+4) ins_bms_financer_master, ins_bms_finance_dsa_master
+5) ins_bms_v2_export_cron_limits, ins_bms_v2_export_cron_limits_lpa
+6) ins_crm_renewal_log_status,ins_crm_renewal_log_status_agent_group
+7) ins_privacy_policy, ins_pos_terms_conditions
+
+
+I can discuss 
+------------------
+1. ins_bms_sr_master
+2. ins_bms_sr_master_mongo_scheduler
+3. ins_bms_sr_master_temp
+4. ins_bms_sr_payout_master
+5. ins_bms_sr_payout_posting
+6. ins_bms_sr_payout_posting_export
+7. ins_bms_sr_products_master
+8. ins_bms_sr_steps
+9. ins_bms_sr_steps_li
+10. ins_bms_users
+11. ins_bms_users_right
+12. ins_bms_v2_finance_payin_master_comma_separated
+13. ins_bms_v2_pay_in_master
+14. ins_bms_v2_pay_in_master_agent_group_wise
+15. ins_bms_v2_pay_in_master_agent_group_wise_comma_separated
+16. ins_bms_v2_pay_in_master_comma_separated
+17. ins_branchfinmagma
+18. ins_crm_claim_master
+19. ins_crm_export_sr
+20. ins_crm_payin_master
+21. ins_employee
+22. ins_get_payment_status
+23. ins_policy_details
+24. ins_questionnaire
+
+Require primary key
+------------------------
+1. ins_policy_details_vahan
+2. ins_sp_reference_update_record
+3. ins_sr_reprts

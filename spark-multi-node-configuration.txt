@@ -1,0 +1,11 @@
+yum install java-1.8.0-openjdk 
+update-alternatives --config java 
+wget http://downloads.lightbend.com/scala/2.11.8/scala-2.11.8.rpm 
+yum install scala-2.11.8.rpm
+wget https://archive.apache.org/dist/spark/spark-3.2.4/spark-3.2.4-bin-hadoop3.2.tgz
+
+
+-- Run jupyter notebook --ip 0.0.0.0 using following command
+
+
+java-1.8.0-openjdk.x86_64 (/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.382.b05-1.el7_9.x86_64/jre/bin/java)
