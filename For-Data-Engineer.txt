@@ -1,0 +1,90 @@
+Power Shell
+-- ssh 
+-- dir  
+
+Install Ubuntu in power shell
+wsl --install -d Ubuntu-20.04
+
+Check runing machine 
+wsl -l -v
+
+If virtual machine stop So you can start using following command
+
+wsl -d Ubuntu-20.04
+
+create virtural environment 
+
+python3 -m venv demo-venv
+
+sudo apt-get install python3-venv;
+
+sudo apt update
+
+sudo apt-get install python3-pip;
+
+Install 
+
+pip install configparser;
+
+Activate your virtual environment using following command
+
+source demo-venv/bin/activate
+
+After activate your virtual environment you can install boto3a
+
+pip install boto3;
+
+pip install requests;
+
+pip install awscli;
+
+After install awscli restart your machine. IAM config
+
+
+aws s3 ls --profile smbasic
+
+aws s3 ls [backet_name] --recursive --profile itvsupport1
+remove file 
+
+aws s3 rm [backet_name] --recursive --profile [username]
+
+Try running this command to copy files into the bucket.
+
+aws s3 cp ~/Research/data/retail_db s3://dg-retail1/retail_db/ \
+ --recursive \
+ --exclude "*.sql" \
+ --exclude "README.md" \
+ --profile itvsupport1
+
+
+------------------------
+Search ssh file
+
+ls -ltr ~/.ssh
+
+ls -altr | grep ssh
+
+------------------------
+Check firewal in ubuntu
+
+sudo ufw status
+
+------------------------------
+When ec2 restart ip address also changed. That problem we can solve through elastic ip address
+
+-------------------------------
+aws ec2 start-instances instance-id i-001d7387a465a9d72
+
+------------------------------
+
+Windows file upload in ubuntu machine 
+
+pscp demo_ec2.pem shiva@192.168.210.54:/home/shiva
+
+ssh -i ~/.ssh/itvaws.pem \
+ ubuntu@ec2-34-232-68-20.compute-1.amazonaws.com
+
+--
+
+Install libarary in folder
+pip install requests -t app_lib

@@ -1,0 +1,17 @@
+s3://sense-source/insert_user_points.csv
+
+-- s3://sense-source/insert_user_points.csv
+copy user_points from 's3://sense-source/insert_user_points.csv' credentials 'aws_access_key_id=AKIAYELF4ZQYNPGNDNBD;aws_secret_access_key=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' CSV;
+
+COPY "apple-buaket".public.user_points (id, contest_point_id, offer_id, user_id, product_id, point, status, created_at, updated_at) FROM 's3://sense-source/user_point_10.csv' IAM_ROLE 'arn:aws:iam::559096319024:role/service-role/AmazonRedshift-CommandsAccessRole-20231005T223051' FORMAT AS CSV DELIMITER ',' QUOTE '"' IGNOREHEADER 1 REGION AS 'ap-south-1';
+
+
+copy user_points from 's3://sense-source/user_code.csv' credentials 'aws_access_key_id=AKIAYELF4ZQYNPGNDNBD;aws_secret_access_key=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' CSV;
+
+select * from sys_load_error_detail;
+SELECT * FROM stl_load_errors;
+
+select *from information_schema.tables where table_name like '%user%';
+
+
+select *from information_schema.tables where table_schema ='public';

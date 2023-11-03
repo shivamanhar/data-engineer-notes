@@ -1,0 +1,19 @@
+python3 -m venv ghad-venv
+source ghad-venv/bin/acivate
+pip install requests
+pip install boto3
+pip install requests -t ghalib
+
+-- postgrays - 5432
+-- mysql -3306
+-- redshift - 5439
+
+
+-----------------------
+CREATE DATABASE retail_db;
+CREATE USER retail_user WITH ENCRYPTED PASSWORD 'test123';
+grant all on database retail_db to retail_user;
+psql -h [hostname] -p [port] -U [user_name] -d [databasename] -W;
+
+pwd [present working directory]
+\d
